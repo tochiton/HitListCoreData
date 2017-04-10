@@ -94,6 +94,7 @@ extension ViewController: UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
         let person = people[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
