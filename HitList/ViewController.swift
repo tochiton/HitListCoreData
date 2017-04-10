@@ -97,7 +97,9 @@ extension ViewController: UITableViewDataSource{
         let person = people[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
         cell.textLabel?.text = person.value(forKeyPath: "name") as? String
+        
         return cell
     }
 }
